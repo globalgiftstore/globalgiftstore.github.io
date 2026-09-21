@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html>
+<head><title>My Real Gift Store</title></head>
+<body style="text-align:center;font-family:Arial;background:white;color:black;padding:30px">
+<h1>MY GIFT STORE IS WORKING!</h1>
+<p>This is a real site. If you see this, it's not blank anymore.</p>
+<p>Enter gift code:</p>
+<input id="code" placeholder="Type code here" style="padding:10px">
+<button onclick="check()" style="padding:10px">Unlock</button>
+<p id="msg"></p>
+<!-- SECRET CODE IS: USA-GIFT-2026 -->
+<script>
+function check(){
+let c=document.getElementById('code').value;
+if(c=="USA-GIFT-2026"){document.getElementById('msg').innerHTML="YES! You hacked it!"}
+else{document.getElementById('msg').innerHTML="Wrong, try view-source"}
+}
+</script>
+</body>
+</html>
